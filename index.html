@@ -14,7 +14,7 @@
     <div class="cards-container">
       <div class="card">
         <a
-          href="https://gamelosmie.github.io/Components-Bundle/expanding-images/index.html"
+          href="expanding-images/index.html"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -27,23 +27,20 @@
         </a>
       </div>
     </div>
-      
 
     <script>
       let cards = document.querySelectorAll(".card");
       let totalCards = document.querySelector(".total");
 
-      if(cards.length == 1){
-        totalCards.textContent =  cards.length + " component made with HTML, CSS and Vanilla JS"
-      }else if(cards.length > 1){
-          totalCards.textContent =  cards.length + " components made with HTML, CSS and Vanilla JS"
-      }else{
-         totalCards.textContent = "Oops!!! no component added yet"
+      if (cards.length == 1) {
+        totalCards.textContent =
+          cards.length + " component made with HTML, CSS and Vanilla JS";
+      } else if (cards.length > 1) {
+        totalCards.textContent =
+          cards.length + " components made with HTML, CSS and Vanilla JS";
+      } else {
+        totalCards.textContent = "Oops!!! no component added yet";
       }
-      
-
-
-
     </script>
   </body>
 </html>
