@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Components Bundle</title>
+  </head>
+  <body>
+    <h1>Components Bundle</h1>
+    <h6 class="total"></h6>
+
+    <div class="cards-container">
+      <div class="card">
+        <a
+          href="/Expanding Images/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="img-container">
+            <img
+              src="./Expanding Images/images/expanding images official pic.png"
+            />
+          </div>
+          <p>Expanding Images</p>
+        </a>
+      </div>
+    </div>
+      
+
+    <script>
+      let cards = document.querySelectorAll(".card");
+      let totalCards = document.querySelector(".total");
+
+      if(cards.length == 1){
+        totalCards.textContent =  cards.length + " component made with HTML, CSS and Vanilla JS"
+      }else if(cards.length > 1){
+          totalCards.textContent =  cards.length + " components made with HTML, CSS and Vanilla JS"
+      }else{
+         totalCards.textContent = "Oops!!! no component added yet"
+      }
+      
+
+
+
+    </script>
+  </body>
+</html>
